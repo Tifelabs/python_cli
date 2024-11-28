@@ -1,6 +1,7 @@
 from commands import cmds 
 import datetime
 from logo import art
+import os 
 
 
 # Prompt to enter username:
@@ -9,6 +10,9 @@ user_name = input('Enter username: ')
 # Ensure the username is in lowercase
 if user_name != user_name.lower():
     print('small text only !!!')
+    
+
+
 else:
     # Print the Welcome Message
     print(">>👾WELCOME TO PYTHON CLI👾<<")
@@ -34,6 +38,10 @@ else:
         now = datetime.datetime.now()
         print(now.strftime("%Y-%m-%d %H:%M:%S"))
 
+    #Command to clear the terminal
+    def clear():
+        os.system('clear || cls')
+
     # Run terminal commands
     while True:
         command = terminal()
@@ -45,6 +53,11 @@ else:
 
         if command == 'time':
             time()
+
+        if command == 'clear':
+            clear()
+
+
         elif command == 'exit':  # Allowing user to exit the loop
             print('Exiting the CLI. Goodbye!')
             break

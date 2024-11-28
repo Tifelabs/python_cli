@@ -64,6 +64,7 @@ cmds = {
     'journalctl': 'Query and display messages from the journal\n',
     'service': 'Run a System V init script\n',
     'reboot': 'Reboot the system\n',
-    'shutdown': 'Shutdown or restart the system\n'
+    'shutdown': 'Shutdown or restart the system\n',
+    'clear': 'clear the terminal \n'
 }
 
